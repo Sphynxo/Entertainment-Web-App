@@ -21,7 +21,7 @@ export default function Trending() {
     if (!scrollContainer) return;
 
     const scrollSpeed = 1;
-    let interval: string | number | NodeJS.Timeout | undefined;
+    let interval: NodeJS.Timeout;
 
     if (!isHovered) {
       interval = setInterval(() => {
